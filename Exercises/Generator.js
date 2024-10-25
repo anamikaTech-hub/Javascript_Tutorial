@@ -5,9 +5,7 @@ function* generator(){
         yield i;
     }
 }
-
 let gen = generator()
-
 let printNext = ()=>{
     let next = gen.next()
 
@@ -19,5 +17,4 @@ let printNext = ()=>{
         setTimeout(printNext,1000)
     }
 }
-
 printNext()
