@@ -1,4 +1,4 @@
-
+////------------PROXY OBJECT----------------///
 
 let target = {
     message:'Hello'
