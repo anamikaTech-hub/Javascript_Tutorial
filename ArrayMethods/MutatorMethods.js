@@ -11,6 +11,11 @@ let array7 = [3,2,7,4,1,9,5]
 let array8 = ['apple', 'orange','banana',]
 let array9 = [1,2,3,4,5]
 
+//-----------ISARRAY
+
+console.log(Array.isArray(array1));// output: true
+
+
 //------------LENGTH
 
 console.log(array1.length);//output: 5
