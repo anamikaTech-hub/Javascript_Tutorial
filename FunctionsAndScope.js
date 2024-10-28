@@ -1,12 +1,12 @@
 ////--------- 1.FUNCTION EXPRESSION
 
-const myFunction = function(){
+const myFunction1 = function(){
     //function body
 };
 
 ////--------- 2.FUNCTION DECLARATION
 
-function myFunction(){
+function myFunction2(){
         //function body
 };
 
@@ -18,9 +18,22 @@ const anonymousFunction = function(){
 
 ////----------4.NAMED FUNCTION EXPRESSION
 
-const myFunction = function namedFunction(){
+const myFunction3 = function namedFunction(){
     //function body
 };
+
+////-------------FUNCTION COMPOSITION
+
+function double(num){
+    return num*2
+}
+
+function addFive(num){
+    return num+5
+}
+
+let result = double(addFive(2))// output: 14
+console.log(result)
 
 ////------------ SCOPE AND LEXICAL SCOPE
 

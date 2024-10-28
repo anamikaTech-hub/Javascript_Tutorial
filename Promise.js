@@ -74,3 +74,26 @@ Promise.all([promise1,promise2]).then((response)=>{
     console.log(error);
     
 })// output: Failed
+
+
+////-----------PROMISE.REJECT
+
+let login = (userName,password)=>{
+    let storedName = 'John'
+    let storedPassword = 'John123'
+    if(storedName !== userName){
+       return  Promise.reject('User name is incorrect')
+    }else if(password !== storedPassword){
+       return Promise.reject('Password is incorrect')
+    }else {
+        return Promise.resolve('Login successfull')
+    }
+}
+login('John','wrongPassword')
+.then(message=>{
+    console.log(message);
+    
+})
+.catch((error)=>{
+    console.log(error);// output:Password is incorrect
+})
